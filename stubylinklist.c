@@ -48,7 +48,7 @@ create_list_head(LinkList *L, int n)
     for (i = 0; i < n; i++) {
         int ch;
         p = (LinkList)malloc(sizeof(Student));
-        printf("请输入%d个学生姓名: ", i + 1);
+        printf("请输入第%d个学生姓名: ", i + 1);
         while ((ch = getchar()) != EOF && ch != '\n') {
             ;
         }
@@ -94,7 +94,7 @@ create_list_tail(LinkList *L, int n)
     for (i = 0; i < n; i++) {
         int ch;
         p = (LinkList)malloc(sizeof(Student));
-        printf("请输入%d个学生姓名: ", i + 1);
+        printf("请输入第%d个学生姓名: ", i + 1);
         while ((ch = getchar()) != EOF && ch != '\n') {
             ;
         }
@@ -428,6 +428,7 @@ list_reverse4(LinkList p, LinkList s)
 
     return new_head;
 }
+
 /* 初始条件：链表L已存在 */
 /* 操作结果：销毁L */
 Status destroy_list(
